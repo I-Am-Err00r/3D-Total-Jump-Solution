@@ -60,7 +60,6 @@ public class Jump : Character
         {
             if (!character.isGrounded && numberOfJumpsLeft == maxJumps)
             {
-                Debug.Log("Exited Out of Jump First");
                 character.isJumping = false;
                 return;
             }
