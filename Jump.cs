@@ -20,7 +20,7 @@ public class Jump : Character
     private float holdForce = 100;
     //How close the player needs to be to a platform before considered grounded
     [SerializeField]
-    private float distanceToCollider = .08f;
+    private float distanceToCollider = .5f;
     //How fast the player can rise while jumping; this prevents multiple jumps in succession from increasing the vertical velocity too much
     [SerializeField]
     private float maxJumpSpeed = 6;
@@ -32,7 +32,7 @@ public class Jump : Character
     private float fallSpeed = 3;
     //How much the gravity should be changed for certain things
     [SerializeField]
-    private float gravityMultipler = 4;
+    private float gravityMultipler = 1.07f;
     //What objects the player should react to as ground
     [SerializeField]
     private LayerMask collisionLayer;
